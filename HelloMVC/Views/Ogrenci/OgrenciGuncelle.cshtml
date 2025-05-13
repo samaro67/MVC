@@ -1,0 +1,21 @@
+﻿@model HelloMVC.Models.Ogrenci
+
+<h1>Öğrenci Güncelle</h1>
+
+<form asp-action="OgrenciGuncelle" asp-controller="Ogrenci" method="post">
+
+
+    <input type="hidden" asp-for="Ogrenciid" />
+
+    <div>
+        <label>Ad:</label>
+        <input asp-for="Ad" />
+    </div>
+
+    <div>
+        <label>Soyad:</label>
+        <input asp-for="Soyad" />
+    </div>
+
+    <button type="submit">Kaydet</button>
+</form>
